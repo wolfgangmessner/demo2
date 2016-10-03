@@ -134,12 +134,21 @@
             </node>
           </node>
         </node>
+<<<<<<< HEAD
         <node concept="3cpWs8" id="3p3BlOZkKD2" role="3cqZAp">
           <node concept="3cpWsn" id="3p3BlOZkKD3" role="3cpWs9">
             <property role="TrG5h" value="varK" />
             <node concept="17QB3L" id="3p3BlOZkKD4" role="1tU5fm" />
             <node concept="Xl_RD" id="3p3BlOZkKD5" role="33vP2m">
               <property role="Xl_RC" value="Das ist Feature K\n" />
+=======
+        <node concept="3cpWs8" id="3p3BlOZkJ_M" role="3cqZAp">
+          <node concept="3cpWsn" id="3p3BlOZkJ_N" role="3cpWs9">
+            <property role="TrG5h" value="varM" />
+            <node concept="17QB3L" id="3p3BlOZkJ_O" role="1tU5fm" />
+            <node concept="Xl_RD" id="3p3BlOZkJ_P" role="33vP2m">
+              <property role="Xl_RC" value="Das ist Feature M\n" />
+>>>>>>> origin/10_FeatureM
             </node>
           </node>
         </node>
@@ -221,6 +230,7 @@
             </node>
           </node>
         </node>
+<<<<<<< HEAD
         <node concept="3clFbF" id="3p3BlOZkKIy" role="3cqZAp">
           <node concept="2OqwBi" id="3p3BlOZkKIz" role="3clFbG">
             <node concept="37vLTw" id="3p3BlOZkKI$" role="2Oq$k0">
@@ -230,6 +240,17 @@
               <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="37vLTw" id="3p3BlOZkKRa" role="37wK5m">
                 <ref role="3cqZAo" node="3p3BlOZkKD3" resolve="varK" />
+=======
+        <node concept="3clFbF" id="3p3BlOZkJFi" role="3cqZAp">
+          <node concept="2OqwBi" id="3p3BlOZkJFj" role="3clFbG">
+            <node concept="37vLTw" id="3p3BlOZkJFk" role="2Oq$k0">
+              <ref role="3cqZAo" node="697_Sic4vo6" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="3p3BlOZkJFl" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <node concept="37vLTw" id="3p3BlOZkJNU" role="37wK5m">
+                <ref role="3cqZAo" node="3p3BlOZkJ_N" resolve="varM" />
+>>>>>>> origin/10_FeatureM
               </node>
             </node>
           </node>
