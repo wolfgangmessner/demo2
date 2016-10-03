@@ -134,24 +134,25 @@
             </node>
           </node>
         </node>
-<<<<<<< HEAD
         <node concept="3cpWs8" id="3p3BlOZkKD2" role="3cqZAp">
           <node concept="3cpWsn" id="3p3BlOZkKD3" role="3cpWs9">
             <property role="TrG5h" value="varK" />
             <node concept="17QB3L" id="3p3BlOZkKD4" role="1tU5fm" />
             <node concept="Xl_RD" id="3p3BlOZkKD5" role="33vP2m">
               <property role="Xl_RC" value="Das ist Feature K\n" />
-=======
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3p3BlOZkJ_M" role="3cqZAp">
           <node concept="3cpWsn" id="3p3BlOZkJ_N" role="3cpWs9">
             <property role="TrG5h" value="varM" />
             <node concept="17QB3L" id="3p3BlOZkJ_O" role="1tU5fm" />
             <node concept="Xl_RD" id="3p3BlOZkJ_P" role="33vP2m">
               <property role="Xl_RC" value="Das ist Feature M\n" />
->>>>>>> origin/10_FeatureM
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2_WcCCCgVmX" role="3cqZAp" />
         <node concept="3cpWs8" id="697_Sic4vo5" role="3cqZAp">
           <node concept="3cpWsn" id="697_Sic4vo6" role="3cpWs9">
             <property role="TrG5h" value="builder" />
@@ -230,7 +231,6 @@
             </node>
           </node>
         </node>
-<<<<<<< HEAD
         <node concept="3clFbF" id="3p3BlOZkKIy" role="3cqZAp">
           <node concept="2OqwBi" id="3p3BlOZkKIz" role="3clFbG">
             <node concept="37vLTw" id="3p3BlOZkKI$" role="2Oq$k0">
@@ -240,7 +240,10 @@
               <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="37vLTw" id="3p3BlOZkKRa" role="37wK5m">
                 <ref role="3cqZAo" node="3p3BlOZkKD3" resolve="varK" />
-=======
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3p3BlOZkJFi" role="3cqZAp">
           <node concept="2OqwBi" id="3p3BlOZkJFj" role="3clFbG">
             <node concept="37vLTw" id="3p3BlOZkJFk" role="2Oq$k0">
@@ -250,11 +253,11 @@
               <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="37vLTw" id="3p3BlOZkJNU" role="37wK5m">
                 <ref role="3cqZAo" node="3p3BlOZkJ_N" resolve="varM" />
->>>>>>> origin/10_FeatureM
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2_WcCCCgVrQ" role="3cqZAp" />
         <node concept="3clFbH" id="697_Sic4vE8" role="3cqZAp" />
         <node concept="3clFbF" id="697_Sic4vI6" role="3cqZAp">
           <node concept="2OqwBi" id="697_Sic4vI3" role="3clFbG">
