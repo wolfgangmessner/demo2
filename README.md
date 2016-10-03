@@ -1,2 +1,2 @@
 # SampleProject
-Initial Commit
+Initial Commit with new Feature
