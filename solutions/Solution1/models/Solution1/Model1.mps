@@ -91,10 +91,28 @@
       <node concept="3clFbS" id="697_Sic4sBA" role="3clF47">
         <node concept="3cpWs8" id="697_Sic4v8G" role="3cqZAp">
           <node concept="3cpWsn" id="697_Sic4v8J" role="3cpWs9">
-            <property role="TrG5h" value="var1" />
+            <property role="TrG5h" value="varA" />
             <node concept="17QB3L" id="697_Sic4v8E" role="1tU5fm" />
             <node concept="Xl_RD" id="697_Sic4vcW" role="33vP2m">
-              <property role="Xl_RC" value="Das ist Feature A" />
+              <property role="Xl_RC" value="Das ist Feature A\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="697_Sic4x6v" role="3cqZAp">
+          <node concept="3cpWsn" id="697_Sic4x6w" role="3cpWs9">
+            <property role="TrG5h" value="varB" />
+            <node concept="17QB3L" id="697_Sic4x6x" role="1tU5fm" />
+            <node concept="Xl_RD" id="697_Sic4x6y" role="33vP2m">
+              <property role="Xl_RC" value="Das ist Feature B\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="697_Sic4x8I" role="3cqZAp">
+          <node concept="3cpWsn" id="697_Sic4x8J" role="3cpWs9">
+            <property role="TrG5h" value="varC" />
+            <node concept="17QB3L" id="697_Sic4x8K" role="1tU5fm" />
+            <node concept="Xl_RD" id="697_Sic4x8L" role="33vP2m">
+              <property role="Xl_RC" value="Das ist Feature C\n" />
             </node>
           </node>
         </node>
@@ -119,7 +137,33 @@
             <node concept="liA8E" id="697_Sic4vzh" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="37vLTw" id="697_Sic4v$g" role="37wK5m">
-                <ref role="3cqZAo" node="697_Sic4v8J" resolve="var1" />
+                <ref role="3cqZAo" node="697_Sic4v8J" resolve="varA" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="697_Sic4xjY" role="3cqZAp">
+          <node concept="2OqwBi" id="697_Sic4xmM" role="3clFbG">
+            <node concept="37vLTw" id="697_Sic4xjW" role="2Oq$k0">
+              <ref role="3cqZAo" node="697_Sic4vo6" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="697_Sic4xpW" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <node concept="37vLTw" id="697_Sic4xvY" role="37wK5m">
+                <ref role="3cqZAo" node="697_Sic4x6w" resolve="varB" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="697_Sic4xBr" role="3cqZAp">
+          <node concept="2OqwBi" id="697_Sic4xF1" role="3clFbG">
+            <node concept="37vLTw" id="697_Sic4xBp" role="2Oq$k0">
+              <ref role="3cqZAo" node="697_Sic4vo6" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="697_Sic4xIs" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <node concept="37vLTw" id="697_Sic4xJs" role="37wK5m">
+                <ref role="3cqZAo" node="697_Sic4x8J" resolve="varC" />
               </node>
             </node>
           </node>
