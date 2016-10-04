@@ -152,6 +152,15 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="1YI4c6Q8uFJ" role="3cqZAp">
+          <node concept="3cpWsn" id="1YI4c6Q8uFK" role="3cpWs9">
+            <property role="TrG5h" value="varA1" />
+            <node concept="17QB3L" id="1YI4c6Q8uFL" role="1tU5fm" />
+            <node concept="Xl_RD" id="1YI4c6Q8uFM" role="33vP2m">
+              <property role="Xl_RC" value="Das ist Feature A1\n" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2_WcCCCgVmX" role="3cqZAp" />
         <node concept="3cpWs8" id="697_Sic4vo5" role="3cqZAp">
           <node concept="3cpWsn" id="697_Sic4vo6" role="3cpWs9">
@@ -253,6 +262,19 @@
               <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="37vLTw" id="3p3BlOZkJNU" role="37wK5m">
                 <ref role="3cqZAo" node="3p3BlOZkJ_N" resolve="varM" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1YI4c6Q8uMS" role="3cqZAp">
+          <node concept="2OqwBi" id="1YI4c6Q8uMT" role="3clFbG">
+            <node concept="37vLTw" id="1YI4c6Q8uMU" role="2Oq$k0">
+              <ref role="3cqZAo" node="697_Sic4vo6" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="1YI4c6Q8uMV" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <node concept="37vLTw" id="1YI4c6Q8uWq" role="37wK5m">
+                <ref role="3cqZAo" node="1YI4c6Q8uFK" resolve="varA1" />
               </node>
             </node>
           </node>
