@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -72,7 +73,52 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+    </language>
+    <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
+      <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
+      <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
+        <child id="9126048691955220762" name="path" index="28jJRO" />
+      </concept>
+      <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
+        <child id="7321017245477039051" name="compositePart" index="iGT6I" />
+      </concept>
+      <concept id="6967233722066057020" name="jetbrains.mps.build.structure.BuildLayout_War" flags="ng" index="2ury4r" />
+      <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
+        <child id="4903714810883783243" name="parts" index="3MwsjC" />
+      </concept>
+      <concept id="8618885170173601777" name="jetbrains.mps.build.structure.BuildCompositePath" flags="nn" index="2Ry0Ak">
+        <property id="8618885170173601779" name="head" index="2Ry0Am" />
+        <child id="8618885170173601778" name="tail" index="2Ry0An" />
+      </concept>
+      <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
+        <child id="4380385936562148502" name="containerName" index="Nbhlr" />
+      </concept>
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
+        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
+      </concept>
+      <concept id="5617550519002745364" name="jetbrains.mps.build.structure.BuildLayout" flags="ng" index="1l3spV" />
+      <concept id="5617550519002745363" name="jetbrains.mps.build.structure.BuildProject" flags="ng" index="1l3spW">
+        <property id="5204048710541015587" name="internalBaseDirectory" index="2DA0ip" />
+        <child id="4796668409958418110" name="scriptsDir" index="auvoZ" />
+        <child id="6647099934206700656" name="plugins" index="10PD9s" />
+        <child id="5617550519002745378" name="macros" index="1l3spd" />
+        <child id="5617550519002745372" name="layout" index="1l3spN" />
+      </concept>
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+        <child id="7389400916848037006" name="children" index="39821P" />
+      </concept>
+      <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
+        <property id="4903714810883755350" name="text" index="3MwjfP" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -279,6 +325,11 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="4hiZ3kPOUmj" role="3cqZAp">
+          <node concept="3SKdUq" id="4hiZ3kPOUml" role="3SKWNk">
+            <property role="3SKdUp" value="COmment" />
+          </node>
+        </node>
         <node concept="3clFbH" id="2_WcCCCgVrQ" role="3cqZAp" />
         <node concept="3clFbH" id="697_Sic4vE8" role="3cqZAp" />
         <node concept="3clFbF" id="697_Sic4vI6" role="3cqZAp">
@@ -305,6 +356,38 @@
         <property role="TrG5h" value="args" />
         <node concept="10Q1$e" id="697_Sic4uc5" role="1tU5fm">
           <node concept="17QB3L" id="697_Sic4uaI" role="10Q1$1" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1l3spW" id="1YI4c6Sjaeg">
+    <property role="2DA0ip" value="../../build/app" />
+    <property role="TrG5h" value="FWWSApp" />
+    <node concept="55IIr" id="1YI4c6Sjaeh" role="auvoZ" />
+    <node concept="1l3spV" id="1YI4c6Sjaei" role="1l3spN">
+      <node concept="2ury4r" id="1YI4c6SjaeG" role="39821P">
+        <node concept="3_J27D" id="1YI4c6SjaeH" role="Nbhlr">
+          <node concept="3Mxwew" id="1YI4c6SjaeK" role="3MwsjC">
+            <property role="3MwjfP" value="Text" />
+          </node>
+        </node>
+        <node concept="28jJK3" id="1YI4c6SjaeM" role="39821P">
+          <node concept="55IIr" id="1YI4c6SjaeN" role="28jJRO" />
+        </node>
+      </node>
+    </node>
+    <node concept="10PD9b" id="1YI4c6Sjaej" role="10PD9s" />
+    <node concept="398rNT" id="1YI4c6Sjaep" role="1l3spd">
+      <property role="TrG5h" value="idea_hom" />
+      <node concept="55IIr" id="1YI4c6Sjaer" role="398pKh">
+        <node concept="2Ry0Ak" id="1YI4c6Sjaew" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="1YI4c6Sjaez" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="1YI4c6SjaeC" role="2Ry0An">
+              <property role="2Ry0Am" value="build" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
