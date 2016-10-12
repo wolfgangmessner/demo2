@@ -327,7 +327,11 @@
         </node>
         <node concept="3SKdUt" id="4hiZ3kPOUmj" role="3cqZAp">
           <node concept="3SKdUq" id="4hiZ3kPOUml" role="3SKWNk">
+<<<<<<< HEAD
             <property role="3SKdUp" value="COmment Issue 20" />
+=======
+            <property role="3SKdUp" value="COmment Issue 17" />
+>>>>>>> origin/master
           </node>
         </node>
         <node concept="3clFbH" id="2_WcCCCgVrQ" role="3cqZAp" />
